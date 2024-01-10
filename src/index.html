@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Лабораторна робота №4</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<body onload="init()">
+		<p> <h1>СНІЖИНКА КОХА</h1></p>
+		<div id="container">
+			<script type="text/javaScript" src="snowflake.js"></script>
+			<canvas id="imageView" width="550" height="510"></canvas>
+			<canvas id="imageTemp" width="550" height="510"></canvas>
+		</div>
+	</body>
+	<div>
+		<h1>МНОЖИНА МАНДЕЛЬБРОТА</h1>
+		<canvas height="500" width=1000 id="mandelbrot"></canvas>
+		<script type="text/javascript" src="mandelbrot.js"></script>
+	</div>
+	<div>
+		<h1>ГІЛКА ПАПОРОТІ</h1>
+		<div id="svg-container"></div>
+		<script src="lib/d3.js"></script>
+		<script src="lib/jquery.js"></script>
+		<script src="ferns.js"></script>
+		<script>
+			VIZ.onResize();  
+			$(window).on("resize", function() {
+			  VIZ.onResize();
+			});
+			for (var i = 0; i < 150000; i++) {
+			  VIZ.addPoint(1);
+			}
+		  </script>
+	  </div>
+</body>

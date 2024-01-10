@@ -1,0 +1,12 @@
+body{
+    background-color:white;
+}
+
+#container { position: relative; }
+#imageTemp { position: absolute; top: 1px; left: 1px; }
+
+h1{
+    color:black;
+    font-style: italic;
+    text-shadow: 0px 0px 20px white;
+}
